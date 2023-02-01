@@ -27,7 +27,7 @@ header{
     grid-area: header;
 }
 
-#recipient-info{
+#contact-info{
     display: flex;
     flex-direction: column;
      flex-wrap: wrap;
@@ -42,17 +42,17 @@ header img{
     margin-right: 1rem;
 }
 
-#recipient-info h1{
+#contact-info h1{
     font-weight: 600;
     font-size: 1rem;
     min-width: 80%
 }
 
-#recipient-info p{
+#contact-info p{
     color: #00B37E;
 }
 
-#recipient-info p::before{
+#contact-info p::before{
     content: " ";
     display: inline-block;
     width: .5rem;
@@ -69,8 +69,6 @@ header img{
     top: 1.5rem;
     font-size: 1.25rem;
 }
-
-
 #last-seen{
     text-align: center;
     margin: 1.6rem auto 0;
@@ -78,6 +76,37 @@ header img{
 
 .chat-area{
     grid-area: chat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.8rem;
+}
+
+.chat-area div:nth-child(even){
+    align-self: flex-end;
+}
+
+.message-data{
+    max-width: 80%;
+}
+
+.message-content{
+    margin-top: .6rem;
+    padding: 1.8rem;
+    background-color: #633BBC;
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 0 .5rem .5rem .5rem;
+}
+
+.message-content.me{
+    background-color: #07847E;
+    border-radius: .5rem .5rem 0 .5rem;
+}
+
+.message-data.me{
+ 
 }
 
 .input-text{
