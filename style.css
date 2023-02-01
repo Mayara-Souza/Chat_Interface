@@ -105,10 +105,59 @@ header img{
     border-radius: .5rem .5rem 0 .5rem;
 }
 
-.message-data.me{
- 
-}
-
 .input-text{
     grid-area: input;
+
+    padding-top: 1.5rem;
+    position: relative;
 }
+
+.input-text input{
+    width: 100%;
+    height: 100%;
+    padding: .8rem 1.5rem;
+    border-radius: 999px;
+    border: none;
+    background-color: #282843;
+    color: #FFF;
+}
+
+.input-text input:focus{
+    outline: 2px solid #633BBC;
+}
+
+.input-text input:hover{
+    cursor: text;
+}
+
+.ph-paper-plane-right{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    color: #fff;
+ }
+
+ @media screen and (min-width:768px){
+    header img{
+        margin-right: 0;
+    }
+
+    #contact-info h1{
+        min-width: 90%;
+    }
+
+
+    .input-text{
+        display: flex;
+        align-items: center;
+    }
+
+    .input-text input{
+        max-height: 3.25rem;
+    }
+ }
